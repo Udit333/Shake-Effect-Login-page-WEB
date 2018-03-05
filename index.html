@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-Type" content="text/html; charset=UTF-8"/
+    <meta name="viewpoint" content="width=device-width ,initial-scale=1.0" />
+    <Title>WEBSITE</Title>
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script type="text/javascript">
+
+    </script>
+    </head>
+  <body>
+
+<div class="login-form">
+  <div class="login-face">
+    <img src="face1.png">
+  </div>
+  <section class="form">
+    <form>
+      <div class="input uname">
+        <input type="text" id="username" placeholder="USERNAME" required/>
+      </div>
+      <div class="input pass">
+        <input type="password" id="password" placeholder="PASSWORD" required/>
+      </div>
+      <a href="#" style="float:right;color:gray;font-size:14px;
+      text-decoration:none;font-family:sans-serif,Arial;
+      margin-bottom:10px;">Forgot Your Password ?</a>
+      <p class="error-msg">Wrong Username or Password</p>
+      <div >
+        <input type="submit" id="login" value="LOG IN" />
+      </div>
+
+    </form>
+  </section>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#login").click(function(){
+    if($("#username").val()==""){
+      $(".input").addClass("error");
+      $("#username").css({"border:2px solid red;"});
+    }
+    if($("#password").val()==""){
+      $(".pass").addClass("error");
+      $("#password").css({"border:2px solid red;"});
+    }
+  })
+  
+})
+</script>
+
+  </body>
+</html>
