@@ -39,11 +39,11 @@
 <script type="text/javascript">
 $(document).ready(function(){
   $("#login").click(function(){
-    if($("#username").val()==""){
+    if($("#username").val() == " "){
       $(".input").addClass("error");
       $("#username").css({"border:2px solid red;"});
     }
-    if($("#password").val()==""){
+    if($("#password").val() == " "){
       $(".pass").addClass("error");
       $("#password").css({"border:2px solid red;"});
     }
