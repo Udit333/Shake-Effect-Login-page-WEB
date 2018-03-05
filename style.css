@@ -79,7 +79,7 @@ input[type="submit"]{
   position: relative;
   animation: shake 0.2s;
 }
-@keyframe shake {
+@keyframes shake {
   0%,100%{left: 0px;}
   20%,80%{left: -15px;}
   40%,60%{left: 15px;}
